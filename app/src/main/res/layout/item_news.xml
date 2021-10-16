@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_news"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/item_box"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_img_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/item_box" />
+
+        <TextView
+            android:id="@+id/tv_name_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_img_news"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/rubik_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_news"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/rubik_light"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_favoriteButton"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/iv_img_news"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_favorite_tapped" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
