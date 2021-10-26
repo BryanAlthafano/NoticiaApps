@@ -1,6 +1,7 @@
 package com.example.noticiaapp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class Profile extends AppCompatActivity {
     TextView tv_fullname, tv_username, tv_email;
     String fullname, username, email;
     ImageView btn_back;
+    AppCompatButton btn_logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,23 @@ public class Profile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Button Logout
+        btn_logout = findViewById(R.id.btn_logout);
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                session.logoutSession();
+                moveToLogin();
+            }
+        });
+    }
+
+    private void moveToLogin() {
+        Intent intent = new Intent(Profile.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+        startActivity(intent);
+        finish();
     }
 
 }

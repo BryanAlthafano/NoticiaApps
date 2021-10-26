@@ -38,7 +38,7 @@
         android:layout_below="@+id/txt_2"
         android:layout_marginTop="20dp"
         android:id="@+id/text_input_username"
-        app:startIconDrawable="@drawable/ic_email">
+        app:startIconDrawable="@drawable/ic_account_circle">
 
         <EditText
             android:id="@+id/et_username"
@@ -46,7 +46,7 @@
             android:layout_height="50dp"
             android:background="@color/background"
             android:fontFamily="@font/rubik_light"
-            android:hint="Email"
+            android:hint="Username"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:textSize="14sp"/>
