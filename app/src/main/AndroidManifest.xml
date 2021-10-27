@@ -15,6 +15,15 @@
         android:theme="@style/Theme.NoticiaApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Activity.WebView"
             android:exported="true" />
         <activity
@@ -26,11 +35,6 @@
         <activity
             android:name=".Activity.Home"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity.SignIn"

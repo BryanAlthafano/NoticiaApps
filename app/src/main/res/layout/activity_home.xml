@@ -68,7 +68,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/search_bar"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"/>
 
         <RelativeLayout
             android:id="@+id/relative_layout_recyclerview"

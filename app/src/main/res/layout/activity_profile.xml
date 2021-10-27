@@ -42,7 +42,10 @@
             android:layout_below="@+id/profile_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Fullname" />
+            android:fontFamily="@font/rubik"
+            android:text="Fullname"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -123,21 +126,21 @@
         </RelativeLayout>
     </RelativeLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_logout"
-            android:layout_below="@+id/profile_box_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_logout"
-            android:fontFamily="@font/rubik_light"
-            android:shadowRadius="10"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:text="Keluar"
-            android:textAllCaps="false"
-            android:textColor="@color/button"
-            android:textSize="16sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profile_box_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_logout"
+        android:fontFamily="@font/rubik_regular"
+        android:shadowRadius="10"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        android:textColor="@color/button"
+        android:textSize="18sp" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
